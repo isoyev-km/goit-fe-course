@@ -1,0 +1,12 @@
+.wrapper {
+  text-align: center;
+}
+.links > ul > li {
+  display: inline-block;
+  width: ;
+  text-align: center;
+}
+.card-body > h1 {
+  color: rgb(98, 98, 98);
+  font-family: "Playfair Display", serif;
+}
