@@ -14,7 +14,7 @@ a {
 /* PlayFair-Display fonts */
 @font-face {
   font-family: "PlayFair-Display";
-  src: url(/fonts/PlayfairDisplay-Regular.ttf) format("truetype");
+  src: url(fonts/PlayfairDisplay-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,7 @@ a {
 /* Ubuntu fonts */
 @font-face {
   font-family: "Ubuntu";
-  src: url(/fonts/Ubuntu-Light.ttf) format("truetype");
+  src: url(fonts/Ubuntu-Light.ttf) format("truetype");
   font-weight: 300;
   font-style: normal;
 }
