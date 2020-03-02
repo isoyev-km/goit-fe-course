@@ -1,0 +1,91 @@
+.card::before {
+    content: "  "; /* без контента не работает */
+}
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси их контейнера. */
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 30px;
+    line-height: 1;
+    border: 2px dashed #000000;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn:before {
+    content: '≡ ' ;
+    position: absolute;
+    top: 50%; /* верхушка на 50% будет, нужно трансформ делать чтобы компенсировать */
+    left: 10px;
+    transform: translateY(-50%);
+    color: blue;
+}
+
+.btn::after {
+    content: '≡ ' ;
+    position: absolute;
+    top: 50%; /* верхушка на 50% будет, нужно трансформ делать чтобы компенсировать */
+    right: 10px; 
+    transform: translateY(-50%);
+    color: blue;
+}
+
+.btn::first-letter {
+    color: rgb(0, 255, 85);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+p::first-line {
+    text-transform: uppercase;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul a {
+    color: inherit;
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:not(:first-child) {
+    font-style: italic;
+    color: rgb(22, 76, 253);
+}
+
+ul li:nth-child(odd) {
+    color: rgb(105, 92, 95);
+}
+
+ul li:nth-child(even) {
+color: rgb(255, 0, 0);
+}
+
+ul li:nth-child(n + 5) a {
+    text-decoration: none;
+}
+
+ul li:nth-child(-n + 5) {
+    color: green;
+}
