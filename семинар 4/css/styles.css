@@ -1,0 +1,36 @@
+ol {
+    list-style: none;
+}
+
+ol li {
+    position: relative; /* чтобы всё не уехало */
+    padding-left: 40px;
+}
+
+ol li:before {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+}
+
+.counter-one li {
+counter-increment: name-counter-one +1;
+}
+
+.counter-two li {
+counter-increment: name-counter-two +1;
+}
+
+.counter-one li:before {
+    content: counter(name-counter-one);
+    font-style: bold;
+}
+
+.counter-two li:before {
+    content: counter(name-counter-two);
+    font-style: italic;
+}
+
+ol li p {
+    margin: 0px;
+}
