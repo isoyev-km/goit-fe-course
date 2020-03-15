@@ -16,7 +16,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="wrapper">
+    <div class="wrapper">
       <header class="page-header">
         <nav class="nav-list">
           <a href="#" class="site-logo">mart</a>
@@ -45,7 +45,7 @@
       <main>
         <section class="cards">
           <div class="container">
-            <h2>featured products</h2>
+            <h2 class="featured-products">featured products</h2>
             <div class="card-list">
               <div class="card">
                 <a href="#" class="card-item">
@@ -57,11 +57,13 @@
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">blue tshirt</span>
-                    <span class="card-price">$26</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$26</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">blue tshirt</h3>
+                    </a>
+                  </div>
               </div>
               <div class="card">
                 <a href="#" class="card-item">
@@ -73,11 +75,13 @@
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">woman-shirt</span>
-                    <span class="card-price">$31</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$31</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">woman-shirt</h3>
+                    </a>
+                  </div>
               </div>
               <div class="card">
                 <a href="#" class="card-item">
@@ -89,11 +93,13 @@
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">yellow-tshirt</span>
-                    <span class="card-price">$21</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$21</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">yellow-tshirt</h3>
+                    </a>
+                  </div>
               </div>
               <div class="card">
                 <a href="#" class="card-item">
@@ -105,11 +111,13 @@
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">cool lingerie</span>
-                    <span class="card-price">$56</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$56</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">cool lingerie</h3>
+                    </a>
+                  </div>
               </div>
               <div class="card">
                 <a href="#" class="card-item">
@@ -121,11 +129,13 @@
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">blue tshirt</span>
-                    <span class="card-price">$26</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$26</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">blue tshirt</h3>
+                    </a>
+                  </div>
               </div>
               <div class="card">
                 <a href="#" class="card-item">
@@ -137,27 +147,31 @@
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">woman shirt</span>
-                    <span class="card-price">$31</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$26</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">woman shirt</h3>
+                    </a>
+                  </div>
               </div>
               <div class="card">
                 <a href="#" class="card-item">
                   <div class="card-img">
                     <img
                       src="img/featured/yellow-tshirt-bottom.png"
-                      alt="yellow-shirt-bottom"
+                      alt="yellow-shirt"
                       width="255"
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">yellow tshirt</span>
-                    <span class="card-price">$21</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$21</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">yellow tshirt</h3>
+                    </a>
+                  </div>
               </div>
               <div class="card">
                 <a href="#" class="card-item">
@@ -169,11 +183,13 @@
                       height="282"
                     />
                   </div>
-                  <div class="card-footer">
-                    <span class="card-name">cool lingerie</span>
-                    <span class="card-price">$56</span>
-                  </div>
                 </a>
+                  <div class="card-footer">
+                    <span class="card-price">$56</span>
+                    <a href="#" class="footer-name">
+                      <h3 class="card-name">cool lingerie</h3>
+                    </a>
+                  </div>
               </div>
             </div>
           </div>
@@ -183,63 +199,57 @@
             <h2 class="news-header">latest news</h2>
             <div class="news-list">
               <div class="news-item">
-                <a href="#" class="news-link">
-                  <div class="news-img">
-                    <img src="img/latest-news/tablet.jpg" alt="tablet" /></div
-                ></a>
+                <a href="#" class="news-link" >
+                    <img src="img/latest-news/tablet.jpg" alt="tablet" /></a>
                 <div class="news-footer">
                   <h3 class="news-name">
                     Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                     Aenea
                   </h3>
-                  <span.news-description>
+                 <p class="news-description">
                     Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet
                     nibh vulputate cursus a sit amet mauris. Morbi accumsan
                     ipsum velit. Nam nec tellus a odio
-                  </span.news-description>
-                  <div class="button">
-                    <button>Read More</button>
+                 </p> 
+                 <div class="button-box">
+                   <a href="#" class="button">Read More</a>
+                 </div>
+                </div>
+              </div>
+              <div class="news-item">
+                <a href="#" class="news-link">
+                    <img src="img/latest-news/writing.jpg" alt="writing" /></a>
+                <div class="news-footer">
+                  <h3 class="news-name">
+                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                    Aenea
+                  </h3>
+                  <p class="news-description">
+                    Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet
+                    nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                    ipsum velit. Nam nec tellus a odio
+                  </p>
+                  <div class="button-box">
+                    <a href="#" class="button">Read More</a>
                   </div>
                 </div>
               </div>
               <div class="news-item">
                 <a href="#" class="news-link">
-                  <div class="news-img">
-                    <img src="img/latest-news/writing.jpg" alt="writing" /></div
-                ></a>
+                    <img src="img/latest-news/bus.jpg" alt="bus" /></a>
                 <div class="news-footer">
                   <h3 class="news-name">
                     Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                     Aenea
                   </h3>
-                  <span.news-description>
+                  <p class="news-description">
                     Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet
                     nibh vulputate cursus a sit amet mauris. Morbi accumsan
                     ipsum velit. Nam nec tellus a odio
-                  </span.news-description>
-                  <div class="button">
-                    <button>Read More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="news-item">
-                <a href="#" class="news-link">
-                  <div class="news-img">
-                    <img src="img/latest-news/bus.jpg" alt="tablet" /></div
-                ></a>
-                <div class="news-footer">
-                  <h3 class="news-name">
-                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                    Aenea
-                  </h3>
-                  <span.news-description>
-                    Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet
-                    nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                    ipsum velit. Nam nec tellus a odio
-                  </span.news-description>
-                  <div class="button">
-                    <button>Read More</button>
-                  </div>
+                 </p>
+                 <div class="button-box">
+                   <a href="#" class="button">Read More</a>
+                 </div>
                 </div>
               </div>
             </div>

@@ -38,22 +38,18 @@ body {
   clear: both;
 }
 
-#wrapper {
-  max-width: 1170px;
+.wrapper {
+  width: 1170px;
   padding: 0 15px;
+  padding-top: 33px;
   margin: 0 auto;
+
 }
 
 /* HEADER SECTION  */
 
 .page-header {
-  max-width: 1170px;
-  margin: 0 15px;
-  padding: 0;
-}
-
-.nav-list {
-  margin-top: 33px;
+  padding: 0 15px;
 }
 
 .site-logo {
@@ -71,7 +67,6 @@ body {
 }
 
 .site-navigation {
-  width: 520px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -97,20 +92,19 @@ body {
 
 /* FEATURES SECTION */
 
-h2 {
+.featured-products {
   position: relative;
   text-align: center;
   text-transform: uppercase;
   color: #515151;
   margin-top: 93px;
   font-family: "Roboto-Black", sans-serif;
-  font-weight: 600;
   font-size: 48px;
   line-height: 32px;
   padding-bottom: 39px;
 }
 
-h2::after {
+.featured-products::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -121,22 +115,16 @@ h2::after {
   background: #4ec6ab;
 }
 
-img {
-  vertical-align: top;
-  min-width: 100%;
-  height: auto;
-}
-
 .container {
-  max-width: 1170px;
+  width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
   display: block;
 }
 
 .card-list {
-  max-width: 1170px;
-  margin: 0 -15px;
+  width: 1140px;
+  margin: 0 0px;
   overflow: hidden;
   margin-top: 92px;
 }
@@ -154,51 +142,62 @@ img {
 
 .card-img {
   background: #e9f0fd;
-  height: 282px;
   position: relative;
-}
-
-.card-img img {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .card-footer {
-  position: relative;
   overflow: hidden;
   color: #fff;
   background: #323232;
   height: 40px;
+  font-family: "Roboto-Black", sans-serif;
 }
 
 .card-name {
-  position: absolute;
-  top: 50%;
-  margin-top: -0.625em;
-  text-transform: uppercase;
   font-family: "Roboto";
+  color: #fff;
   font-size: 18px;
-  padding-left: 14px;
+  line-height: 32px;
+  padding: 4px 14px;
+  margin: 0;
 }
 
 .card-price {
   float: right;
   background-color: rgba(255, 255, 255, 0.44);
   font-size: 18px;
-  position: relative;
-  top: 25%;
-  margin-top: -0.625em;
-  padding: 11px;
+  line-height: 32px;
+  padding: 4px 11px;
+  font-weight: bold;
 }
 
 /* LATEST-NEWS SECTION */
+.latest-news {
+  list-style: none;
+  margin-top: 66px;
+  padding: 0;
+}
 
 .news-header {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 48px;
   color: #555252;
-  font-weight: bold;
+  margin: 0;
+  font-family: "Roboto-Black", sans-serif;
+  padding-bottom: 28px;
+}
+
+.news-header::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  content: "";
+  height: 7px;
+  width: 164px;
+  background: #4ec6ab;
 }
 
 .news-link {
@@ -209,15 +208,12 @@ img {
   text-transform: none;
 }
 
-.news-img {
-  margin-bottom: -10px;
-}
-
 .news-name {
   position: relative;
   padding-bottom: 14px;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  margin: 0;
 }
 
 .news-name::after {
@@ -231,17 +227,10 @@ img {
   background: #4ec6ab;
 }
 
-.latest-news {
-  list-style: none;
-  margin-top: 80px;
-  padding: 0;
-}
-
 .news-list {
   max-width: 1140px;
-  margin: 0 -15px;
   overflow: hidden;
-  margin-top: 41px;
+  margin-top: 81px;
   position: absolute;
   line-height: 26px;
   font-size: 14px;
@@ -256,15 +245,22 @@ img {
   width: 33.3%;
 }
 
-.button > button {
-  margin-top: 10px;
-  margin-bottom: 14px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #f6fbfa;
-  background-color: #4ec6ab;
-  width: 159px;
-  height: 51px;
+.button-box {
+  width: 160px;
+  height: 50px;
   border: 1px;
   border-radius: 3px;
+  background-color: #4ec6ab;
+  text-align: center;
+  position: relative;
+}
+
+.button {
+  text-transform: none;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  position: absolute;
+  top: 25%;
+  right: 25%;
 }
