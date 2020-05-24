@@ -131,15 +131,11 @@ a {
   margin-bottom: 50px;
 }
 
-@media (min-resolution 192dpi), (min-resolution 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   .banner {
-    background-image: url(/img/background_bird@2x.png);
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .banner {
-    background: url(/img/background_bird@2x.png) no-repeat cover;
+    background: url(../img/background_bird@2x.png) no-repeat cover;
   }
 }
 

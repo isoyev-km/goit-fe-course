@@ -1,0 +1,70 @@
+.banner {
+  height: 1000px;
+  position: relative;
+  @include bg-image(
+    $path: '../images/background_bird.png',
+    $size: cover,
+    $repeat: no-repeat,
+    $pos: center
+  );
+  text-align: center;
+  color: $on-banner-color;
+  z-index: -1;
+  margin-bottom: 50px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .banner {
+    background: url(../images/background_bird@2x.png) no-repeat cover;
+  }
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: linear-gradient(
+    0deg,
+    $main-color-accent 0%,
+    $gradient-top-color 100%
+  );
+}
+
+.banner * {
+  position: relative;
+  z-index: 1;
+}
+
+.banner__header-top {
+  font-family: $secondary-font;
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0;
+  padding-top: 230px;
+}
+
+.banner__header-bottom {
+  font-family: $main-font-stack;
+  text-transform: uppercase;
+  font-size: 150px;
+  line-height: 140px;
+  padding: 0 60px;
+  margin: 0 0 136px;
+}
+
+.banner__button {
+  font-size: 14px;
+  border: 3px solid $on-banner-color;
+  padding: 8px 30px;
+  font-weight: bold;
+  color: $on-banner-color;
+  text-transform: uppercase;
+  font-family: $main-font-stack;
+}
